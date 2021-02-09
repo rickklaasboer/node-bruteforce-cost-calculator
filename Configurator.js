@@ -126,15 +126,20 @@ class Configurator {
 
       if (!this.passed) {
         this.passed = item;
+        console.log("Initial item set");
       } else {
         if (
           item.combinedCost < this.passed.combinedCost &&
           item.combinedAvailability >= item.combinedAvailability &&
-          item.combinedAvailability >= 0.9999
+          item.combinedAvailability.toFixed(4) >= 0.9999
         ) {
           console.log("Passed " + i);
           this.passed = item;
         }
+      }
+
+      if (Number.isInteger(i / 1000000)) {
+        console.log(`Iteration: ${i}`);
       }
     }
 
