@@ -1,0 +1,13 @@
+{
+  "firewall": [{ "name": "pfSense", "availability": 0.99998, "price": 4000 }],
+  "db": [
+    { "name": "HAL9001DB", "availability": 0.9, "price": 5100 },
+    { "name": "HAL9002DB", "availability": 0.95, "price": 7700 },
+    { "name": "HAL9003DB", "availability": 0.98, "price": 12200 }
+  ],
+  "web": [
+    { "name": "HAL9001W", "availability": 0.8, "price": 2200 },
+    { "name": "HAL9002W", "availability": 0.9, "price": 3200 },
+    { "name": "HAL9003W", "availability": 0.95, "price": 5100 }
+  ]
+}
