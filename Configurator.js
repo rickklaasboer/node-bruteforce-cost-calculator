@@ -131,7 +131,7 @@ class Configurator {
         if (
           item.combinedCost < this.passed.combinedCost &&
           item.combinedAvailability >= item.combinedAvailability &&
-          item.combinedAvailability.toFixed(4) >= 0.9999
+          item.combinedAvailability >= 0.9999
         ) {
           console.log("Passed " + i);
           this.passed = item;
